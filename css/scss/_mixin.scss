@@ -1,0 +1,62 @@
+$width : 1920px;
+
+@mixin flex($n) {
+    display: flex;
+    justify-content: $n;
+    @content
+}
+
+;
+
+@mixin btn($s) {
+    padding: 10px 40px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: $s;
+    @content
+}
+
+;
+
+@mixin btn-w($s) {
+    padding: 10px 40px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: $s;
+    @content
+}
+
+;
+
+$mobile: 480px;
+$pad: 768px;
+$tablet: 1024px;
+$desktop: 1280px;
+
+@mixin res($n) {
+    @if($n ==$mobile) {
+        @media screen and (max-width:$mobile) {
+            @content;
+        }
+    }
+
+    @else if($n ==$pad) {
+        @media (min-width:$mobile) and (max-width:$pad) {
+            @content;
+        }
+    }
+
+    @else if($n ==$tablet) {
+        @media (min-width:769px) and (max-width:$tablet) {
+            @content;
+        }
+    }
+
+    @else {
+        @media screen and (min-width:$n) {
+            @content;
+        }
+    }
+}

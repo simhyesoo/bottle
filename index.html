@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한민국 최고 주류 쇼핑몰</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./js/index.js"></script>
+</head>
+
+
+<body>
+    <!-- header-->
+    <header data-include-file="./include/main/header.html" class="includeJs"></header>
+    <!-- header-->
+
+    <section>
+        <div class="swiper banner">
+            <figure class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/main/main-slide-01.png" alt="">
+                    <div class="tit">
+                        <div>홀리데이 추천 위스키</div>
+                        <div class="second">
+                            글렌피딕 12년 홀리데이 에디션
+                        </div>
+                        <div>
+                            <progress value="25" max="100"></progress>
+                            <img class="_pause" src="./images/main/pause-btn.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main/main-slide-02.png" alt="">
+                    <div class="tit">
+                        <div>홀리데이 추천 위스키</div>
+                        <div class="second">
+                            글렌피딕 12년 홀리데이 에디션
+                        </div>
+                        <div>
+                            <progress value="25" max="100"></progress>
+                            <img class="_pause" src="./images/main/pause-btn.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main/main-slide-03.png" alt="">
+                    <div class="tit">
+                        <div>홀리데이 추천 위스키</div>
+                        <div class="second">
+                            글렌피딕 12년 홀리데이 에디션
+                        </div>
+                        <div>
+                            <progress value="25" max="100"></progress>
+                            <img class="_pause" src="./images/main/pause-btn.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main/main-slide-04.png" alt="">
+                    <div class="tit">
+                        <div>홀리데이 추천 위스키</div>
+                        <div class="second">
+                            글렌피딕 12년 홀리데이 에디션
+                        </div>
+                        <div>
+                            <progress value="25" max="100"></progress>
+                            <img class="_pause" src="./images/main/pause-btn.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </figure>
+        </div>
+        <!-- <div class="swiper-scrollbar"></div> -->
+        <div class="banner-m">
+            <img src="./images/main/main-slide-01.png" alt="">
+            <div class="tit">
+                <div>홀리데이 추천 위스키</div>
+                <div class="second">
+                    글렌피딕 12년 <br>홀리데이 에디션
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="wlist">
+            <div class="wine">
+                <div class="cate-name">분위기 있는 와인</div>
+                <div class="more" onclick="location.href='./pages/list.html?name=wine'">
+                    <span>+</span>&nbsp;more
+                </div>
+                <div class="wine-l">
+                    <div id="dv-wine" class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="blist">
+            <div class="beer">
+                <div class="cate-name">즐겨 마시는 맥주</div>
+                <div class="more" onclick="location.href='./pages/list.html?name=beer'">
+                    <span>+</span>&nbsp;more
+                </div>
+                <div class="beer-l">
+                    <div id="dv-beer" class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="slist">
+            <div class="soju">
+                <div class="cate-name">늘 한결같은 소주</div>
+                <div class="more" onclick="location.href='./pages/list.html?name=soju'">
+                    <span>+</span>&nbsp;more
+                </div>
+                <div class="soju-l">
+                    <div id="dv-soju" class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ylist">
+            <div class="whisky">
+                <div class="cate-name">홀리데이 위스키</div>
+                <div class="more" onclick="location.href='./pages/list.html?name=whisky'">
+                    <span>+</span>&nbsp;more
+                </div>
+                <div class="whisky-l">
+                    <div id="dv-whisky" class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="community">
+            <div class="review">
+                <div>
+                    <div class="cate-name">베스트후기</div>
+                    <div class="more">
+                        <span>+</span>&nbsp;more
+                    </div>
+                    <div class="list">
+                        <figure>
+                            <div class="pic">
+                                <img src="./images/beer/beer9.png" alt="">
+                            </div>
+                            <div class="desc" style="cursor: pointer;"
+                                onclick="location.href='./pages/view.html?name=beer&idx=9#section'">
+                                <p>초야(CHOYA)] 논알콜 유자 탄산음료 요와나이 유즈슈 350ml (정식수입)</p>
+                                <p>
+                                    다른것보다 이름이 독특해서 구매해봤습니다
+                                    맛도 어떨지 궁금하네요.
+                                </p>
+                                <p>
+                                    ★★★★★
+                                </p>
+                            </div>
+                        </figure>
+                        <figure>
+                            <div class="pic">
+                                <img src="./images/soju/soju_3_01.jpg" alt="">
+                            </div>
+                            <div class="desc" style="cursor: pointer;"
+                                onclick="location.href='./pages/view.html?name=soju&idx=3#section'">
+                                <p>김연박명인 민속주안동소주 양반탈 45도 400ml 조옥화1대명인</p>
+                                <p>
+                                    배송이 엄청 빠르네요...!! 하루만에...!!
+                                    민속주 안동소주는 믿고 마시죠!
+                                </p>
+                                <p>
+                                    ★★★★★
+                                </p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="notice">
+                <div>
+                    <div class="cate-name">공지사항</div>
+                    <div class="more">
+                        <span>+</span>&nbsp;more
+                    </div>
+                    <div class="list">
+                        <figcaption>
+                            <div>[할인] 크리스마스 기념 할인 상품-와일드 터키 마스터스 킵 코너스톤 라이</div>
+                            <div>2023.12.24</div>
+                        </figcaption>
+                        <figcaption>
+                            <div>[출고] 10년숙성 (주)솔송주 리미티드에디션 솔직 25도 375ml</div>
+                            <div>2023.12.23</div>
+                        </figcaption>
+                        <figcaption>
+                            <div>[입점] 왕지케양조장 설홍 20도 375ml 동백증류주 동백꽃 소주</div>
+                            <div>2023.12.20</div>
+                        </figcaption>
+                        <figcaption>
+                            <div>[알림] 아사히 드라이제로프리 논알콜 350ml 24캔 판매 중지 되었습니다.</div>
+                            <div>2023.12.19</div>
+                        </figcaption>
+                        <figcaption>
+                            <div>[입고] 선운산 복분자주 흥진 샹스프라보아즈 복분자와인13도 750ml</div>
+                            <div>2023.12.18</div>
+                        </figcaption>
+                        <figcaption>
+                            <div>[배송] 운송 노조 파업 사태로 인한 배송지연 관련 내용입니다.</div>
+                            <div>2023.12.15</div>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer data-include-file="./include/main/footer.html" class="includeJs"></footer>
+    <!-- footer -->
+    <!-- Swiper JS -->
+
+    <!-- Initialize Swiper -->
+</body>
+
+</html>

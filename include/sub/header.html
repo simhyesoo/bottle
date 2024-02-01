@@ -1,0 +1,67 @@
+<div class="header-pc">
+    <article>
+        <div class="main-title">
+            <div>
+                <a href="../index.html">Happy Pub</a>
+            </div>
+            <div>
+                <input type="text" value="" onkeyup="if(window.event.keyCode==13){goSearch(value)}">
+            </div>
+            <div>
+                <img onclick="goSearch();" src="../images/main/search-icon-svg_b.png" alt="">
+            </div>
+            <div>
+                <img onclick="location.href='../pages/cart.html'" src="../images/main/cart-icon-svg_b.png" alt="">
+            </div>
+        </div>
+        <div class="main-menu">
+            <nav>
+                <a href="../pages/list.html?name=wine">분위기 있는 와인</a>
+                <a href="../pages/list.html?name=beer">즐겨 마시는 맥주 </a>
+                <a href="../pages/list.html?name=soju">늘 한결같은 소주</a>
+                <a href="../pages/list.html?name=whisky">홀리데이 위스키</a>
+            </nav>
+        </div>
+    </article>
+</div>
+<div class="header-m">
+    <div class="toggle">
+        <img src="../images/main/menu-icon-svg.png" onclick="sideMenu();" alt="">
+        <nav>
+            <div class="menu">
+                <p><a href="../index.html" class="home">Happy Pub</a></p>
+                <p id="p-close" onclick="sideClose();">
+                    <img src="../images/main/close-icon-svg.png" alt="">
+                </p>
+            </div>
+            <ul>
+                <li>
+                    <a href="../pages/list.html?name=wine">분위기 있는 와인</a>
+                </li>
+                <li>
+                    <a href="../pages/list.html?name=beer">즐겨 마시는 맥주</a>
+                </li>
+                <li>
+                    <a href="../pages/list.html?name=soju">늘 한결같은 소주</a>
+                </li>
+                <li>
+                    <a href="../pages/list.html?name=whisky">홀리데이 위스키</a>
+                </li>
+            </ul>
+            <div class="sign">
+                <div>
+                    <p>로그인</p>
+                    <p onclick="location.href='../pages/cart.html'">장바구니</p>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <div>
+        <a href="../index.html" class="home">Happy Pub</a>
+    </div>
+    <div>
+        <img onclick="location.href='../pages/search.html'" src="../images/main/search-icon-svg.png" alt="">
+        <img onclick="location.href='../pages/cart.html'" src="../images/main/cart-icon-svg.png" alt="">
+    </div>
+</div>
